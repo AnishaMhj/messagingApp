@@ -1,4 +1,6 @@
 
+//switch case
+
 function getDayName(dayNum) {
     var day;
 
@@ -31,3 +33,12 @@ function getDayName(dayNum) {
 }
 
 document.write(getDayName(30));
+
+
+//while loop
+
+var i = 11;
+do {
+    document.write(i + "</br>")
+    i++;  //i = i+1;
+} while (i <= 10)
