@@ -35,10 +35,30 @@ function getDayName(dayNum) {
 document.write(getDayName(30));
 
 
-//while loop
+//do-while loop
 
 var i = 11;
 do {
     document.write(i + "</br>")
     i++;  //i = i+1;
 } while (i <= 10)
+
+
+//while loop
+
+var i = 0;
+while (i <= 10) {
+    document.write(i + "</br>")
+    i++;  //i = i+1;
+}
+
+//For loop
+
+for (var i = 0; i <= 10; i++) {
+    document.write("</br>" + i);
+}
+
+var friends = ["Jay", "lily", "Nathan"];
+for (var i = 0; i < friends.length; i++) {
+    document.write(friends[i] + "</br>")
+}
