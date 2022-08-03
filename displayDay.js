@@ -33,7 +33,8 @@ function getDayName(dayNum) {
 }
 
 document.write(getDayName(30));
-
+document.write("</br>");
+document.write("</br>");
 
 //do-while loop
 
@@ -43,6 +44,8 @@ do {
     i++;  //i = i+1;
 } while (i <= 10)
 
+document.write("</br>");
+document.write("</br>");
 
 //while loop
 
@@ -51,6 +54,9 @@ while (i <= 10) {
     document.write(i + "</br>")
     i++;  //i = i+1;
 }
+
+document.write("</br>");
+document.write("</br>");
 
 //For loop
 
@@ -61,4 +67,34 @@ for (var i = 0; i <= 10; i++) {
 var friends = ["Jay", "lily", "Nathan"];
 for (var i = 0; i < friends.length; i++) {
     document.write(friends[i] + "</br>")
+}
+
+document.write("</br>");
+document.write("</br>");
+
+//Nested loop
+
+for (var i = 0; i < 4; i++) {
+    for (var j = 0; j < 3; j++) {
+        document.write("i=" + i + ",j=" + j + "</br>");
+    }
+}
+
+document.write("</br>");
+document.write("</br>");
+
+//2D Arrays
+
+var numberGrid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [0]
+]
+
+for (var i = 0; i <= numberGrid.length; i++) {
+    for (var j = 0; j < numberGrid[i].length; j++) {
+        document.write(numberGrid[i][j]);
+    }
+    document.write("</br>")
 }
