@@ -36,6 +36,7 @@ document.write(getDayName(30));
 document.write("</br>");
 document.write("</br>");
 
+
 //do-while loop
 
 var i = 11;
@@ -69,8 +70,36 @@ for (var i = 0; i < friends.length; i++) {
     document.write(friends[i] + "</br>")
 }
 
+
 document.write("</br>");
 document.write("</br>");
+
+//forEach loop
+var books = [
+    {
+        title: "Harry Potter",
+        author: "JK Rowling",
+        pages: 500
+    },
+    {
+        title: "Green Eggs & Ham",
+        author: "Dr. Seuss",
+        pages: 50
+    }
+]
+var siblings = ["Oscar", "Angela", "Kevin"];
+
+siblings.forEach(function (sibling) {
+    document.write("</br>" + sibling + "</br>");
+});
+
+books.forEach(function (book) {
+    document.write("</br>" + book.title + "</br>")
+})
+
+document.write("</br>");
+document.write("</br>");
+
 
 //Nested loop
 
@@ -97,4 +126,10 @@ for (var i = 0; i <= numberGrid.length; i++) {
         document.write(numberGrid[i][j]);
     }
     document.write("</br>")
+}
+
+//JS timing
+
+function sayHi() {
+    alert("Hi");
 }
